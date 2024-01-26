@@ -1,12 +1,22 @@
-import React from "react";
+import { useEffect, useState, useRef } from "react";
 
-function useOutsideAlerter(ref, setX) {
-  React.useEffect(() => {
+type DropdownProps = {
+  button: React.ReactNode;
+  children: React.ReactNode;
+  classNames?: string;
+  animation?: string;
+};
+
+function useOutsideAlerter(
+  ref: React.RefObject<HTMLElement>,
+  setX: React.Dispatch<React.SetStateAction<boolean>>
+) {
+  useEffect(() => {
     /**
      * Alert if clicked on outside of element
      */
-    function handleClickOutside(event) {
-      if (ref.current && !ref.current.contains(event.target)) {
+    function handleClickOutside(event: MouseEvent) {
+      if (ref.current && !ref.current.contains(event.target as Node)) {
         setX(false);
       }
     }
@@ -19,10 +29,14 @@ function useOutsideAlerter(ref, setX) {
   }, [ref, setX]);
 }
 
-const Dropdown = (props) => {
-  const { button, children, classNames, animation } = props;
-  const wrapperRef = React.useRef(null);
-  const [openWrapper, setOpenWrapper] = React.useState(false);
+const Dropdown = ({
+  button,
+  children,
+  classNames,
+  animation,
+}: DropdownProps) => {
+  const wrapperRef = useRef<HTMLDivElement>(null);
+  const [openWrapper, setOpenWrapper] = useState(false);
   useOutsideAlerter(wrapperRef, setOpenWrapper);
 
   return (
