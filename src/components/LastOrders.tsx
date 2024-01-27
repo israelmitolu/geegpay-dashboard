@@ -12,7 +12,7 @@ const LastOrders = () => {
       <div className="h-6 w-full flex items-center justify-between text-[#9CA4AB] font-medium text-base">
         <span className="w-[216px] font-medium ">Name</span>
         <div className="flex items-center gap-[34.75px]">
-          <span className="w-[116px]">Date</span>
+          <span className="hidden md:block w-[116px]">Date</span>
           <span className="w-[120px]">Amount</span>
           <span className="w-[95px]">Status</span>
           <span className="w-[80px]">Invoice</span>

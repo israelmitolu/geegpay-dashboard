@@ -40,7 +40,7 @@ const Navbar = () => {
         <img
           src="/icons/notifications.svg"
           alt="notifications"
-          className="cursor-pointer"
+          className="hidden md:block cursor-pointer"
         />
         <UserDropdown />
       </div>

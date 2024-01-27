@@ -26,7 +26,9 @@ const SingleOrder = ({
           <span className="text-[#3A3F51]">{name}</span>
         </span>
         <div className="flex items-center gap-[34.75px]">
-          <span className="w-[116px] text-[#737373]">{date}</span>
+          <span className="hidden md:block w-[116px] text-[#737373]">
+            {date}
+          </span>
           <span className="w-[120px] text-[#0D062D] font-medium">
             ${amount}
           </span>
