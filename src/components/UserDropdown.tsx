@@ -13,8 +13,12 @@ const UserDropdown = () => {
                 alt="Elon Musk"
               />
               <div className="font-inter text-right">
-                <p className="text-base text-[#26282C] mb-1">Justin Bergson</p>
-                <p className="text-sm text-[#787486]">Justin@gmail.com</p>
+                <p className="text-sm lg:text-base text-[#26282C] mb-1">
+                  Justin Bergson
+                </p>
+                <p className="text-xs lg:text-sm text-[#787486]">
+                  Justin@gmail.com
+                </p>
               </div>
             </div>
             <img src="/icons/downCaret.svg" alt="open dropdown" />
@@ -24,9 +28,7 @@ const UserDropdown = () => {
           <div className="flex w-56 flex-col justify-start rounded-[20px] bg-white bg-cover bg-no-repeat shadow-xl shadow-shadow-500">
             <div className="p-4">
               <div className="flex items-center gap-2">
-                <p className="text-sm font-bold text-navy-700">
-                  👋 Hey, Justin
-                </p>
+                <p className="text-sm font-bold">Hello Justin</p>
               </div>
             </div>
             <div className="h-px w-full bg-gray-200 " />

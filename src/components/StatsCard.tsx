@@ -16,10 +16,16 @@ const StatsCard = ({
   isUptrend,
 }: StatsCardProps) => {
   return (
-    <div className="w-[239px] h-[179px] rounded-[14px] border border-[#EDF2F7] p-4 flex flex-col gap-[10px]">
+    <div className="w-full 2xl:w-[239px] h-[179px] rounded-[14px] bg-white border border-[#EDF2F7] p-4 flex flex-col gap-[10px]">
       <div className="flex items-center justify-between">
         <img src={iconSrc} alt="chart" />
-        <img src="/icons/chart.svg" alt="more" />
+        <img
+          src={`
+        ${isUptrend ? "/icons/uptrendChart.svg" : "/icons/downtrendChart.svg"}
+        
+        `}
+          alt="chart"
+        />
       </div>
       <div>
         <span className="text-[#898989] font-medium text-base lg:text-lg mb-[5px]">

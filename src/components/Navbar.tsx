@@ -3,11 +3,12 @@ import UserDropdown from "./UserDropdown";
 
 const Navbar = () => {
   return (
-    <header className="ml-[80px] h-[88px] p-5 bg-[#FAFAFA] flex items-center justify-between sticky">
+    <header className="md:ml-[80px] h-[88px] p-5 bg-[#FAFAFA]/10 flex items-center justify-between sticky top-0 z-10 backdrop-blur-xl">
+      {/* // <header className="sticky top-4 z-40 flex flex-row flex-wrap items-center justify-between rounded-xl bg-white/10 p-2 backdrop-blur-xl dark:bg-[#0b14374d]"> */}
       <p className="font-semibold text-xl text-[#26282C]">Dashboard</p>
 
       <div className="flex items-center gap-[20px]">
-        <div className="flex h-[48px] w-[349px] font-normal pl-4 items-center bg-white text-navy-700 dark:bg-navy-900 dark:text-white border border-[#DADDDD] rounded-3xl">
+        <div className="hidden xl:flex h-[48px] 2xl:w-[349px] font-normal pl-4 items-center bg-white text-navy-700 dark:bg-navy-900 dark:text-white border border-[#DADDDD] rounded-3xl">
           <p className="text-xl mr-1">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -30,7 +31,7 @@ const Navbar = () => {
             className="block p-3 h-full w-full rounded-full bg-white text-sm placeholder:text-[#A3A3A3] font-medium text-[#26282C] outline-none font-inter sm:w-[90%]"
           />
         </div>
-        <div className="ml-0.5 p-4 flex items-center gap-[10px]">
+        <div className="ml-0.5 p-4 hidden lg:flex items-center gap-[10px]">
           <img src="/icons/solar_calendar-linear.svg" alt="calendar" />
           <span className="text-[#26282C] font-inter text-sm font-medium">
             {moment().format("MMMM Do YYYY")}

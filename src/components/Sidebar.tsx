@@ -2,7 +2,7 @@ import ThemeSwitcher from "./ThemeSwitcher";
 
 const Sidebar = () => {
   return (
-    <aside className="w-[80px] h-full py-5 bg-[#F7F8FA] border-r border-[#EBECF2] flex flex-col items-center justify-between fixed top-0 left-0">
+    <aside className="w-[80px] h-full py-5 bg-[#F7F8FA] border-r border-[#EBECF2] hidden md:flex flex-col items-center justify-between fixed top-0 left-0">
       <div className="flex flex-col items-center">
         <img
           src="/icons/Logo.svg"

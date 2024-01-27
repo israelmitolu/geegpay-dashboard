@@ -1,4 +1,5 @@
 import useThemeMode from "../hooks/useThemeMode";
+// add sound effect on click
 
 const ThemeSwitcher = () => {
   const [colorMode, setColorMode] = useThemeMode();
