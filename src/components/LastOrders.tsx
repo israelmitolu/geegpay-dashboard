@@ -5,7 +5,7 @@ const LastOrders = () => {
     <div className="w-full 2xl:w-[806px] h-[422px] rounded-[14px] bg-white border border-[#EDF2F7] px-5 pt-[18px] pb-[31px]">
       <div className="flex items-center justify-between mt-[14px] mb-5">
         <h3 className="text-lg text-[#26282C] font-semibold">Last Orders</h3>
-        <span className="text-lg text-[#34CAA5] font-medium cursor-pointer">
+        <span className="text-base lg:text-lg text-[#34CAA5] font-medium cursor-pointer">
           See All
         </span>
       </div>

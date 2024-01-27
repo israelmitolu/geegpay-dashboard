@@ -1,4 +1,3 @@
-import React from "react";
 import SinglePlatformStat from "./SinglePlatformStat";
 
 const TopPlatforms = () => {
@@ -6,7 +5,7 @@ const TopPlatforms = () => {
     <div className="w-full 2xl:w-[488px] h-auto pt-4 pr-4 pl-5 pb-5 rounded-lg bg-white">
       <div className="flex items-center justify-between mb-5">
         <h3 className="text-lg text-[#26282C] font-semibold">Top Platform</h3>
-        <span className="text-lg text-[#34CAA5] font-medium cursor-pointer">
+        <span className="lg:text-lg text-[#34CAA5] font-medium cursor-pointer">
           See All
         </span>
       </div>
