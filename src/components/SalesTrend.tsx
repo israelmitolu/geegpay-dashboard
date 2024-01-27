@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import BarChart from "../components/charts/BarChart";
 import Dropdown from "./Dropdown";
 
 const SalesTrend = () => {
   const [selectedOption, setSelectedOption] = useState("Monthly");
 
-  const handleSelectOption = (option) => {
+  const handleSelectOption = (option:string) => {
     setSelectedOption(option);
   };
 
